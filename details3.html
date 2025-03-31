@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigga For Sale</title>
+    <link rel="icon" href="imgs/box-solid.png" type="image/x-icon">
+    <!-- Main Templet CSS File  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" class="js-color-style" href="css/colors/color-2.css" />
+    <!-- Render All Elements Normally  -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-box nav-logo-icon"></i>
+                <p> Nigga For Sale</p>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-items" id="nav-items">
+                    <li class="item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="item"><a class="nav-link" href="faq.html">Faq's</a></li>
+                    <li class="item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-btns">
+                <div class="login-toggle" id="login-toggle">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="cart-shop" id="cart-shop">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i id="icon-toggel" class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- #################### CART #################### -->
+    <div class="cart" id="cart">
+        <i class="fas fa-times cart-close" id="cart-close"></i>
+        <h2 class="cart-title">My Cart</h2>
+        <div class="cart-container">
+            <article class="cart-card">
+                <div class="cart-box">
+                    <img class="cart-img" src="imgs/h.png" alt="">
+                </div>
+                <div class="cart-details">
+                    <h3 class="cart-title-center">Jamal</h3>
+                    <span class="cart-price">$5541</span>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-trash cart-amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart-card">
+                <div class="cart-box">
+                    <img class="cart-img" src="imgs/Jacket2.png" alt="">
+                </div>
+                <div class="cart-details">
+                    <h3 class="cart-title-center">Kaiman Bryant</h3>
+                    <span class="cart-price">$2458</span>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-trash cart-amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart-card">
+                <div class="cart-box">
+                    <img class="cart-img" src="imgs/short.png" alt="">
+                </div>
+                <div class="cart-details">
+                    <h3 class="cart-title-center">Telvis Gregory</h3>
+                    <span class="cart-price">$4788</span>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-trash cart-amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart-prices">
+            <div class="cart-prices-item">3 Items</div>
+            <span class="cart-prices-total">$12787</span>
+        </div>
+    </div>
+
+
+
+
+    <!-- ################## END CART ################## -->
+
+    <!-- ################# START LOGIN ################ -->
+
+    <div class="login" id="login">
+        <i class="fas fa-times login-close" id="login-close"></i>
+        <h2 class="login-title">LOGIN</h2>
+        <form action="" class="login-form grid">
+            <!-- EMAIL -->
+            <div class="login-content">
+                <label class="login-label" for="">Email</label>
+                <input type="email" class="login-input" id="e-mail">
+            </div>
+            <!-- PASSWORD -->
+            <div class="login-content">
+                <label class="login-label" for="">Password</label>
+                <input type="password" class="login-input" id="pass">
+            </div>
+            <!-- BUTTON -->
+            <div>
+                <a class="login-btn button" href="">Sign In</a>
+            </div>
+            <div>
+                <p class="signup">Not a member?
+                    <a href="regisration.html">SignUp</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- ################## END LOGIN ################# -->
+
+
+
+
+    <!-- ################## Start Details ################# -->
+    <div class="main">
+        <section class="details section container">
+            <h2 class="bearcrumb-title">Details</h2>
+            <h3 class="bearcrumb-subtitle">Home > <span class="main-color">Details</span> </h3>
+            <div class="details-container" style="display: flex; align-items: flex-start; gap: 20px;">
+                <div class="product-imgs">
+                    <div class="product-img">
+                        <div class="details-img-tag">New</div>
+                        <img class="details-img" src="imgs/Jacket2.png" alt="Jacket" style="width: 120%; height: auto;">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="details-subtitle">Slaves > Kaiman Bryant</p>
+                    <h3 class="details-title">Kaiman Bryant</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="reviews-count">40 + Reviews</span>
+                    </div>
+                    <div class="details-prices">
+                        <span class="details-price">$2458</span>
+                        <span class="details-discount">$3000</span>
+                        <span class="discount-percentage">50% OFF</span>
+                    </div>
+                    <div class="details-discription">
+                        <h3 class="discription-title">Product Details</h3>
+                        <div class="discription-details">
+                            <p>Kaiman Byrant, a courageous leader, rallied his fellow slaves together, forming a secret society dedicated to overthrowing their cruel masters.</p>
+                        </div>
+                    </div>
+                    <div class="cart-amount">
+                        <div class="cart-amount-content">
+                            <span class="cart-amount-box">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <span class="card-amount-number">1</span>
+                            <span class="cart-amount-box">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </div>
+                        <i class="fas fa-heart cart-amount-heart"></i>
+                    </div>
+                    <a href="" class="button">Add To Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section related-products">
+            <h2 class="section-title">Related Product</h2>
+            <div class="new-container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- NEW CONTENT 1 -->
+                    <div class="new-content swiper-slide">
+                        <div class="new-tag">New</div>
+                        <img class="new-img" src="imgs/Jacket2.png" alt="New">
+                        <h3 class="new-title">Kaiman Bryant</h3>
+                        <span class="new-subtitle">Slave</span>
+
+                        <div class="new-prices">
+                            <span class="new-price">$2458</span>
+                            <span class="new-discount">$3000</span>
+                        </div>
+
+                        <a class="button new-button" href="details3.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- NEW CONTENT 2 -->
+                    <div class="new-content swiper-slide">
+                        <div class="new-tag">New</div>
+                        <img class="new-img" src="imgs/short.png" alt="New">
+                        <h3 class="new-title">Telvis Gregory</h3>
+                        <span class="new-subtitle">Slave</span>
+
+                        <div class="new-prices">
+                            <span class="new-price">$4788</span>
+                            <span class="new-discount">$5000</span>
+                        </div>
+
+                        <a class="button new-button" href="details6.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- NEW CONTENT 3 -->
+                    <div class="new-content swiper-slide">
+                        <div class="new-tag">New</div>
+                        <img class="new-img" src="imgs/Jacket3.png" alt="New">
+                        <h3 class="new-title">Hakim Brown</h3>
+                        <span class="new-subtitle">Slave</span>
+
+                        <div class="new-prices">
+                            <span class="new-price">$6294</span>
+                            <span class="new-discount">$6700</span>
+                        </div>
+
+                        <a class="button new-button" href="details.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- NEW CONTENT 4 -->
+                    <div class="new-content swiper-slide">
+                        <div class="new-tag">New</div>
+                        <img class="new-img" src="imgs/h.png" alt="New">
+                        <h3 class="new-title">Jamal</h3>
+                        <span class="new-subtitle">Slave</span>
+
+                        <div class="new-prices">
+                            <span class="new-price">$5541</span>
+                            <span class="new-discount">$6000</span>
+                        </div>
+
+                        <a class="button new-button" href="details5.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- NEW CONTENT 5 -->
+                    <div class="new-content swiper-slide">
+                        <div class="new-tag">New</div>
+                        <img class="new-img" src="imgs/Jacket4.png" alt="New">
+                        <h3 class="new-title">NegroChad</h3>
+                        <span class="new-subtitle">Slave</span>
+
+                        <div class="new-prices">
+                            <span class="new-price">$9999</span>
+                            <span class="new-discount"></span>
+                        </div>
+
+                        <a class="button new-button" href="details2.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- NEW CONTENT 6 -->
+                    <div class="new-content swiper-slide">
+                        <div class="new-tag">New</div>
+                        <img class="new-img" src="imgs/jeans.png" alt="New">
+                        <h3 class="new-title">Jekeil Steele</h3>
+                        <span class="new-subtitle">Slave</span>
+
+                        <div class="new-prices">
+                            <span class="new-price">$2031</span>
+                            <span class="new-discount">$2500</span>
+                        </div>
+
+                        <a class="button new-button" href="details4.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ################## End details ################# -->
+
+
+
+
+
+    <!-- ################## START FOOTER ############ -->
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <!-- FOOTER CONTENT 1 -->
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <i class="fas fa-box footer-logo-icon"></i>
+                    <p> Nigga For Sale</p>
+                </a>
+
+                <p class="footer-discription">Enjoy the biggest sale <br> of your life.</p>
+                <div class="footer-social">
+                    <a class="footer-social-link" href="https://discord.gg/YtsD65g5B3"><i class="fab fa-discord"></i></a>
+                    <a class="footer-social-link" href="https://www.instagram.com/a.b.e.l_t.h.o.m.a.s/"><i class="fab fa-instagram"></i></a>
+                    <a class="footer-social-link" href="https://open.spotify.com/user/31fhtd4reydkffxh33n3vpf5bqwq?si=ebb89a0d3f244792"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer-content">
+                <h3 class="footer-title">About</h3>
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                    <li><a class="footer-link" href="">Customer Support</a></li>
+                    <li><a class="footer-link" href="">Support Center</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer-content">
+                <h3 class="footer-title">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="shop.html">Shop</a></li>
+                    <li><a class="footer-link" href="">Discount</a> </li>
+                    <li><a class="footer-link" href="">Shipping Mode</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer-content">
+                <h3 class="footer-title">Our Company</h3>
+
+                <ul class="footer-links">
+                    <li><a class="footer-link" href="">Register</a></li>
+                    <li><a class="footer-link" href="">Contact Us</a></li>
+                    <li><a class="footer-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer-copy">&#169; <span class="main-color">NFS</span> All Right reserved</span>
+    </footer>
+    <!-- ################## END FOOTER ############ -->
+
+
+    <!-- ################## START LIGHTBOX ############ -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img class="lightbox-img" src="imgs/town.webp" alt="Shirt">
+            <div class="lightbox-caption">
+                <div class="caption-text">Hofny Shop</div>
+                <div class="caption-counter"></div>
+            </div>
+        </div>
+        <div class="lightbox-control">
+            <div onclick="prevItem()" class="prev-item"><i class="fas fa-arrow-left"></i></div>
+            <div onclick="nextItem()" class="next-item"><i class="fas fa-arrow-right"></i></div>
+        </div>
+    </div>
+    <!-- ################## END LIGHTBOX ############ -->
+
+
+    <!-- ################## SCROLL UP ############ -->
+    <a class="scroll-up" id="scroll-up" href="#"><i class="fas fa-arrow-up"></i></a>
+    <!-- ################## START STYLE SWITCHER  ############ -->
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+
+        </div>
+        <h4>Theme Colors</h4>
+
+        <div class="themes-colors js-theme-colors">
+            <button type="button" data-js-themes-color="color-1" class="js-theme-color-item themes-button color-1">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-2" class="js-theme-color-item themes-button color-2">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-3" class="js-theme-color-item themes-button color-3">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-4" class="js-theme-color-item themes-button color-4">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" data-js-themes-color="color-5" class="js-theme-color-item themes-button color-5">
+                <i class="fas fa-check"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ################## END STYLE SWITCHER  ############ -->
+    <script>
+        const productItems = document.querySelectorAll(".product-img"),
+            totalProductItems = productItems.length,
+            lightbox = document.querySelector(".lightbox"),
+            lightboxImage = lightbox.querySelector(".lightbox-img"),
+            lightboxClose = lightbox.querySelector(".lightbox-close"),
+            lightboxCounter = lightbox.querySelector(".caption-counter");
+
+        let itemIndex = 0;
+
+        for (let i = 0; i < totalProductItems; i++) {
+            productItems[i].addEventListener("click", function() {
+                itemIndex = i;
+                changeItem();
+                toggleLightbox();
+            })
+        }
+
+        function toggleLightbox() {
+            lightbox.classList.toggle("open")
+        }
+
+        lightbox.addEventListener("click", function() {
+            // lightbox.classList.remove("open")
+            if (event.target === lightboxClose || event.target === lightbox) {
+                toggleLightbox();
+            }
+        })
+
+
+        function nextItem() {
+            if (itemIndex == totalProductItems - 1) {
+                itemIndex = 0;
+            } else {
+                itemIndex++
+            }
+            changeItem()
+        }
+
+        function prevItem() {
+            if (itemIndex == 0) {
+                itemIndex = totalProductItems - 1;
+            } else {
+                itemIndex--
+            }
+            changeItem()
+        }
+
+
+        function changeItem() {
+            imgSrc = productItems[itemIndex].querySelector(".product-img img").getAttribute("src");
+            lightboxImage.src = imgSrc;
+            lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalProductItems;
+        }
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
