@@ -224,6 +224,11 @@
                     min-width: 220px;
                     height: 400px;
                 }
+                .promotion-embed.youtube-embed iframe {
+                    width: 350px !important;
+                    height: 200px !important;
+                    aspect-ratio: 16/9;
+                }
                 @media (max-width: 900px) {
                     .promotion-container {
                         flex-direction: column;
@@ -238,6 +243,11 @@
                     }
                 }
                 @media (max-width: 600px) {
+                    .promotion-embed.youtube-embed iframe {
+                        width: 100% !important;
+                        min-width: 0 !important;
+                        height: 140px !important;
+                    }
                     .promotion.section {
                         padding: 1.2rem 0.5rem;
                         border-radius: 0.7rem;
@@ -254,16 +264,19 @@
                 }
             </style>
             <div class="promotion-container container grid">
-                <div class="promotion-content">
+                <div class="promotion-content acrylic">
                     <h2 class="promotion-title">Join Our Promotion for a Discount!</h2>
                     <p class="promotion-description">
                         Be the first to know about exclusive deals, new arrivals, and special events. Connect with other fans and get direct support from our team!
                     </p>
-                    <a href="https://discord.gg/CgzVaUz9" class="promotion-btn button" target="_blank">
+                    <a href="https://discord.gg/zPw4aDVFnk" class="promotion-btn button" target="_blank">
                         <i class="fab fa-discord"></i> Join Discord
                     </a>
                 </div>
-                <div class="promotion-embed">
+                <div class="promotion-embed acrylic youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/HL1gqobAe7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:1rem; box-shadow:0 4px 24px rgba(0,0,0,0.08);"></iframe>
+                </div>
+                <div class="promotion-embed acrylic">
                     <iframe src="https://discord.com/widget?id=1369179729021632612&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>
