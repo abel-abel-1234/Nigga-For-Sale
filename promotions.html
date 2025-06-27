@@ -10,6 +10,7 @@
     <!-- Main Templet CSS File  -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <link rel="stylesheet" class="js-color-style" href="css/colors/color-2.css" />
     <!-- Render All Elements Normally  -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -18,18 +19,19 @@
 </head>
 
 <body>
+ 
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">
                 <i class="fas fa-box nav-logo-icon"></i>
                 <p> Nigga For Sale</p>
             </a>
-             <div class="nav-menu" id="nav-menu">
+            <div class="nav-menu" id="nav-menu">
                 <ul class="nav-items" id="nav-items">
                     <li class="item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="item"><a class="nav-link" href="shop.html">Shop</a></li>
-                    <li class="item"><a class="nav-link active-link" href="about.html">About</a></li>
-                    <li class="item"><a class="nav-link" href="promotions.html">Promotion</a></li>
+                    <li class="item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="item"><a class="nav-link active-link" href="promotions.html">Promotion</a></li>
                     <li class="item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -122,8 +124,6 @@
     </div>
 
 
-
-
     <!-- ################## END CART ################## -->
 
     <!-- ################# START LOGIN ################ -->
@@ -148,7 +148,7 @@
             </div>
             <div>
                 <p class="signup">Not a member?
-                    <a href="regisration.html">SignUp</a>
+                    <a href="registration.html">SignUp</a>
                 </p>
             </div>
         </form>
@@ -156,49 +156,119 @@
 
     <!-- ################## END LOGIN ################# -->
 
-
-
-
-    <!-- ################## Start About ################# -->
-    <div class="main">
-        <section class="about section container">
-            <h2 class="bearcrumb-title">About Us</h2>
-            <h3 class="bearcrumb-subtitle">Home > <span class="main-color">About Us</span> </h3>
-            <div class="about-container grid">
-                <img class="about-img" src="imgs/about.svg" alt="">
-                <div class="about-data">
-                    <div class="about-head">
-                        <h2 class="about-title section-title">
-                            who really We Are <br> Why Choose Us
-                        </h2>
-                        <p class="about-main-description">
-                            We have over 3500+ unbiased reviews and our customers trust our products.
-                        </p>
-                    </div>
-                    <div class="about-details grid">
-                        <p class="about-description">
-                            <i class="fas fa-check-square"></i> We always delivery on time.
-                        </p>
-                        <p class="about-description">
-                            <i class="fas fa-check-square"></i> We give you guides to protect and care for your product.
-                        </p>
-                        <p class="about-description">
-                            <i class="fas fa-check-square"></i> 100% money back Guaranted.
-                        </p>
-                    </div>
+        <!-- ################# START PROMOTION SECTION ############ -->
+        <section class="promotion section" id="promotion" style="background: #fff; padding: 3rem 0; border-radius: 1.5rem; margin: 7rem 0 2rem 0; box-shadow: 0 8px 32px 0 rgba(31,38,135,0.08);">
+            <style>
+                .promotion.section {
+                    background: #fff !important;
+                    padding: 3rem 0;
+                    border-radius: 1.5rem;
+                    margin: 7rem 0 2rem 0 !important;
+                    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.08);
+                }
+                .promotion-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                }
+                .promotion-content {
+                    flex: 1 1 320px;
+                    min-width: 260px;
+                    color: #232526;
+                }
+                .promotion-title {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    color: #232526;
+                }
+                .promotion-description {
+                    font-size: 1.1rem;
+                    margin-bottom: 1.5rem;
+                    color: #555;
+                }
+                .promotion-btn.button {
+                    display: inline-flex;
+                    align-items: center;
+                    background: #5865F2;
+                    color: #fff;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 2rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    box-shadow: 0 4px 16px rgba(88,101,242,0.12);
+                    transition: background 0.2s;
+                }
+                .promotion-btn.button:hover {
+                    background: #4752c4;
+                }
+                .promotion-btn.button i {
+                    font-size: 1.5rem;
+                    margin-right: 0.7rem;
+                }
+                .promotion-embed {
+                    flex: 1 1 350px;
+                    min-width: 260px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .promotion-embed iframe {
+                    border-radius: 1rem;
+                    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+                    width: 100%;
+                    max-width: 350px;
+                    min-width: 220px;
+                    height: 400px;
+                }
+                @media (max-width: 900px) {
+                    .promotion-container {
+                        flex-direction: column;
+                        gap: 2.5rem;
+                    }
+                    .promotion-content, .promotion-embed {
+                        min-width: 0;
+                        width: 100%;
+                    }
+                    .promotion-embed iframe {
+                        height: 350px;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .promotion.section {
+                        padding: 1.2rem 0.5rem;
+                        border-radius: 0.7rem;
+                    }
+                    .promotion-title {
+                        font-size: 1.3rem;
+                    }
+                    .promotion-description {
+                        font-size: 1rem;
+                    }
+                    .promotion-embed iframe {
+                        height: 250px;
+                    }
+                }
+            </style>
+            <div class="promotion-container container grid">
+                <div class="promotion-content">
+                    <h2 class="promotion-title">Join Our Promotion for a Discount!</h2>
+                    <p class="promotion-description">
+                        Be the first to know about exclusive deals, new arrivals, and special events. Connect with other fans and get direct support from our team!
+                    </p>
+                    <a href="https://discord.gg/CgzVaUz9" class="promotion-btn button" target="_blank">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </a>
                 </div>
-
+                <div class="promotion-embed">
+                    <iframe src="https://discord.com/widget?id=1369179729021632612&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
             </div>
         </section>
-    </div>
-
-
-    <!-- ################## End about ################# -->
-
-
-
-
-
+        <!-- ################# END PROMOTION SECTION ############ -->
     <!-- ################## START FOOTER ############ -->
     <footer class="footer section">
         <div class="footer-container container grid">
@@ -250,8 +320,13 @@
     <!-- ################## END FOOTER ############ -->
 
 
-    <!-- ################## SCROLL UP ############ -->
-    <a class="scroll-up" id="scroll-up" href="#"><i class="fas fa-arrow-up"></i></a>
+    <!-- ################## START SCROLL UP ############ -->
+    <a class="scroll-up" id="scroll-up" href="#">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- ################## END SCROLL UP ############ -->
+
+
 
     <!-- ################## START STYLE SWITCHER  ############ -->
 
@@ -282,6 +357,7 @@
     </div>
 
     <!-- ################## END STYLE SWITCHER  ############ -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

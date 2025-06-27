@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
     /* Start Variables */
     
      :root {
@@ -1957,3 +1957,56 @@
     .show-scroll {
         bottom: 2rem;
     }
+    
+    /* Clean, rounded UI for all main containers, cards, buttons, and forms */
+body, .section, .container, .card, .footer, .header, .login, .cart, .promotion.section {
+    border-radius: 1.5rem !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+.button, .login-btn, .promotion-btn, .cart-amount-box, .footer-social-link {
+    border-radius: 2rem !important;
+}
+input, textarea, select {
+    border-radius: 1rem !important;
+    border: 1px solid #e0e0e0;
+    padding: 0.7rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.card, .cart-card, .footer-content, .login-form, .promotion-content, .promotion-embed {
+    border-radius: 1.2rem !important;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+img, iframe {
+    border-radius: 1rem !important;
+}
+@media (max-width: 600px) {
+    .container, .section, .footer, .header, .login, .cart, .promotion.section {
+        border-radius: 0.7rem !important;
+    }
+    .card, .cart-card, .footer-content, .login-form, .promotion-content, .promotion-embed {
+        border-radius: 0.7rem !important;
+    }
+}
+
+/* Light/Dark mode base styles */
+:root {
+  --bg-main: #fff;
+  --text-main: #232526;
+  --card-bg: #fff;
+  --card-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  --button-bg: #5865F2;
+  --button-text: #fff;
+}
+body, .section, .container, .card, .footer, .header, .login, .cart, .promotion.section {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+}
+.card, .cart-card, .footer-content, .login-form, .promotion-content, .promotion-embed {
+  background: var(--card-bg) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+.button, .login-btn, .promotion-btn {
+  background: var(--button-bg) !important;
+  color: var(--button-text) !important;
+}
